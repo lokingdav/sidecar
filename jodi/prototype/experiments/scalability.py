@@ -124,8 +124,8 @@ def set_simulator(args):
 def run_experiment_1(resultsloc):
     start = time.perf_counter()
     
-    for i in range(2, maxRepTrustParams + 1):
-        for j in range(2, maxRepTrustParams + 1):
+    for i in range(1, maxRepTrustParams + 1):
+        for j in range(1, maxRepTrustParams + 1):
             for iteration in range(1, numIters + 1):
                 params = {'n_ev': i, 'n_ms': j, 'iter': iteration}
                 print(f"\n============ Iteration {iteration}/{numIters}, {params} ============")
