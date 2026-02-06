@@ -1,16 +1,15 @@
-# Jodi - Jodi’s Out-of-band Dial Intelligence
+# Sidecar: Extensible Out-of-band Signaling for Trustworthy Telephony
 
-The STIR/SHAKEN caller attestation framework to combat pervasive telephone abuse. This initiative has not achieved its goals, partly because legacy non-VoIP infrastructure could not participate. The industry solution to extend STIR/SHAKEN broadcasts sensitive metadata of every non-VoIP call in plaintext to every third party required to facilitate the system. It has no mechanism to determine if a provider's request for call data is appropriate, nor can it ensure that every copy of that call data is unavailable after its specified expiration. It threatens both individual privacy and industry trade secrets.
+Telephone network abuse tactics continue to outpace defenses, motivating new countermeasures that depend on the reliable delivery of authenticated, rich caller identity information to call destinations.
 
-Jodi (pronounced “YOH-dee"), is a distributed system that securely extends STIR/SHAKEN across telephone network technologies. It provides secure out-of-band signaling for transmitting STIR/SHAKEN PASSPorTs even with non-VoIP infrastructure and protects confidentiality of subscriber identity. Not only is Jodi a superior approach, it provides a transformative tool for future improvements, such as stronger call authentication or features like Branded Calling.
+Regulators and network operators seek to introduce new capabilities, such as stronger caller authentication and branded calling, to improve trust in voice communication. Yet the telephone network lacks the agility to support new capabilities and offers no reliable in-band mechanism for delivering the required metadata end-to-end.
 
-Jodi makes use of Oblivious Pseudorandom Functions (OPRFs), Threshold Group Signatures (TGS) and Symmetric Key Encryption to ensure its security guarantees. Jodi distributes secrets in a T-out of-N scheme. So, at least T members of the group have to collude to leak any secrets as compared to 1 in the original OOB SS design.
+In this paper, we present Sidecar, a distributed secure transport system that reliably delivers call metadata across all telephone technologies while cryptographically preserving subscriber and provider confidentiality, enforcing record expiration, and isolating each record so that neither past nor future activity is revealed in case of compromise. 
+We formalize secure out-of-band signaling, define its requirements, and construct scalable protocols that realize its functionality, proving their security in the Universal Composability (UC) framework. 
 
-- The code repository contains the source code for setting up
-    - Jodi Evaluators (EV) and Message Stores (MS) on the cloud
-    - OOB STIR/SHAKEN CPSes on the cloud
-    - Jodi and OOB STIR/SHAKEN proxy on the providers infrastructure
-- All of the components are Dockerized for easy and scalable deployment
+Our prototype evaluation shows that Sidecar incurs low compute and bandwidth costs and adds only a fraction of a second to call setup.
+
+Sidecar retrofits telephony with a secure and extensible transport layer, providing a medium for researchers and industry stakeholders working to mitigate telephone abuse.
 
 
 ## Initial Setup Instructions
