@@ -18,7 +18,7 @@ setup(
     version='1.0.0',
     packages=find_packages(),
     description='Control Plane Extension For Telephony',
-    author='David L. Adei',
+    author='David',
     author_email='lokingdav@gmail.com',
     url='https://github.com/lokingdav/jodi',
     classifiers=[
