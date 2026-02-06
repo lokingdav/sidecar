@@ -70,7 +70,7 @@ username <username> privilege 15 password <password>
 
 set domain
 ```
-ip domain name wspr.ncsu.edu
+ip domain name <domain>
 ```
 
 Enable local login

@@ -11,7 +11,6 @@
 
 ### Building Asterisk
 - Download [Asterisk version 21.4.3](https://github.com/asterisk/asterisk/releases/tag/21.4.3) (Commit hash: 489a05f269e005242027ab47d37fb6b6a1651989)
-    - Or download the patched source from [Jasterisk](https://github.com/nithinshyam13/Jasterisk-21.4.3)
 - Go to the source directory.
 - Run `contrib/scripts/install_prereq install`, this will install all the necessary packages.
 - Update the files as described in the next subsection (JAsterisk files) if working with original source.

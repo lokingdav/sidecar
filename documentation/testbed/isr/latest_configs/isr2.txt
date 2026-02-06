@@ -41,7 +41,7 @@ clock timezone EST -5 0
 
 ip name-server 1.1.1.1 8.8.8.8
 
-ip domain name wspr.ncsu.edu
+ip domain name <domain>
 !
 !
 !
